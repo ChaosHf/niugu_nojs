@@ -1,0 +1,53 @@
+{
+  "name": "hufei-niugu",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.8.1",
+    "jquery": "^2.2.3",
+    "js-cookie": "^2.1.0",
+    "js-base64": "^2.1.9",
+    "arg.js": "^1.3.1",
+    "jquery-md5": "*",
+    "light7": "light7-dqm#^0.4.4",
+    "template.js": "^0.7.1",
+    "fecha": "^2.3.0",
+    "lib-flexible": "*",
+    "echarts": "^3.5.3",
+    "swiper": "^3.4.2"
+  },
+  "devDependencies": {
+    "mocha": "~2.3.4",
+    "chai": "~3.4.2"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.min.css",
+        "fonts/*"
+      ]
+    },
+    "light7": {
+      "main": [
+        "./dist/css/light7.css",
+        "./dist/js/light7.js",
+        "./dist/fonts/*",
+        "./dist/img/*"
+      ]
+    },
+    "jquery.base64.js": {
+      "main": [
+        "jquery.base64.js"
+      ]
+    },
+    "jquery-md5": {
+      "main": [
+        "jquery.md5.js"
+      ]
+    },
+    "js-object-clone": {
+      "main": [
+        "object-clone.js"
+      ]
+    }
+  }
+}

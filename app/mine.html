@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <title>牛股世界</title>
+
+  <!-- rev-hash -->
+  <!-- build:css assets/css/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/light7/dist/css/light7.css" />
+  <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- end -->
+  <!-- rev-hash -->
+  <!-- build:css assets/css/niugu.css -->
+  <link rel="stylesheet" href="/assets/css/niugu.css">
+  <!-- endbuild -->
+  <!-- end -->
+
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+  <!-- 单个page ,第一个.page默认被展示-->
+  <div id="page-mine" class="page">
+    <!--工具栏-->
+    <nav class="bar bar-tab">
+      <a class="tab-item" href="index.html" external>
+        <span class="icon icon-niugu"></span>
+        <span class="tab-label">牛股</span>
+      </a>
+      <a class="tab-item " href="arena.html" external>
+        <span class="icon icon-arena"></span>
+        <span class="tab-label">擂台</span>
+      </a>
+      <a class="tab-item" href="media.html" external>
+        <span class="icon icon-media"></span>
+        <span class="tab-label">自媒体</span>
+      </a>
+      <a class="tab-item" href="release.html" external>
+        <span class="icon icon-release"></span>
+        <span class="tab-label">发布</span>
+      </a>
+      <a class="tab-item active" href="mine.html" external>
+        <span class="icon icon-mine"></span>
+        <span class="tab-label">我的</span>
+      </a>
+    </nav>
+    <div class="content">
+      <!--我的信息-->
+      <div class="list-block">
+        <div class="mine-content">
+          <div class="mine-inner">
+            <div class="item-content item-link mine-box">
+              <div class="item-media">
+                <img src="assets/images/mine/avatar.png" class="mine-avatar" alt="">
+              </div>
+              <div class="item-inner no-after">
+                <div class="item-title mine-area">
+                  <div class="mine-name">超级牛股王</div>
+                  <div class="mine-intro j-name_click">擅长趋势操作 择时得当 盈利能持有</div>
+                </div>
+              </div>
+            </div>
+            <div class="ps-content">
+                <span>关注</span><span class="ps-concern">23</span><span class="ps-fans">粉丝</span><span>13</span>
+            </div>
+          </div>
+          <div class="mine-info">
+            <div class="info-box">
+              <div class="info-num">3篇</div>
+              <div class="info-title">历史笔记</div>
+            </div>
+            <div class="info-box">
+              <div class="info-num">100.00%</div>
+              <div class="info-title">累计收益</div>
+            </div>
+            <div class="info-box">
+              <div class="info-num">8.83%</div>
+              <div class="info-title">月收益率</div>
+            </div>
+            <div class="info-box">
+              <div class="info-num">0.00%</div>
+              <div class="info-title">周收益率</div>
+            </div>
+            <div class="info-box">
+              <div class="info-num">3次</div>
+              <div class="info-title">擂主</div>
+            </div>
+          </div>
+        </div>
+        <div class="mine-content pd-l-75">
+          <a href="account.html" external>
+          <div class="item-content item-link mine-box ">
+            <div class="item-media">
+              <img src="assets/images/mine/coins.png" class="mine-icon" alt="">
+            </div>
+            <div class="item-inner no-after">
+              <div class="item-title mine-text">
+                <div class="mine-name">我的账户</div>
+              </div>
+              <div class="item-after mine-name">
+                8.88
+              </div>
+            </div>
+          </div>
+            </a>
+        </div>
+        <div class="mine-content">
+          <div class="mine-inner">
+            <a href="mine-note.html" external>
+            <div class="item-content item-link mine-box">
+              <div class="item-media">
+                <img src="assets/images/mine/mynote.png" class="mine-icon" alt="">
+              </div>
+              <div class="item-inner no-after">
+                <div class="item-title mine-text">
+                  <div class="mine-name">我阅读的笔记</div>
+                </div>
+                <div class="item-after mine-name">
+                  3篇
+                </div>
+              </div>
+            </div>
+              </a>
+          </div>
+          <div class="mine-inner">
+            <a href="mine-note.html" external>
+            <div class="item-content item-link mine-box">
+              <div class="item-media">
+                <img src="assets/images/mine/shownote.png" class="mine-icon" alt="">
+              </div>
+              <div class="item-inner no-after">
+                <div class="item-title mine-text">
+                  <div class="mine-name">我发布的笔记</div>
+                </div>
+                <div class="item-after mine-name">
+                  3篇
+                </div>
+              </div>
+            </div>
+              </a>
+          </div>
+          <div class="mine-inner">
+            <div class="item-content item-link mine-box">
+              <div class="item-media">
+                <img src="assets/images/mine/myviewpoint.png" class="mine-icon" alt="">
+              </div>
+              <div class="item-inner no-after">
+                <div class="item-title mine-text">
+                  <div class="mine-name">我的观点</div>
+                </div>
+                <div class="item-after mine-name">
+                  1条
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-content item-link">
+            <div class="item-media">
+              <img src="assets/images/mine/myhome.png" class="mine-icon" alt="">
+            </div>
+            <div class="item-inner no-after">
+              <div class="item-title mine-text">
+                <div class="mine-name">我创建的帮派</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="mine-content">
+          <div class="mine-inner">
+            <a href="setting.html" external>
+            <div class="item-content item-link mine-box">
+              <div class="item-media">
+                <img src="assets/images/mine/install.png" class="mine-icon" alt="">
+              </div>
+              <div class="item-inner no-after">
+                <div class="item-title mine-text">
+                  <div class="mine-name">推送设置</div>
+                </div>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="mine-inner">
+            <a href="suggestion.html" external>
+              <div class="item-content item-link mine-box">
+                <div class="item-media">
+                  <img src="assets/images/mine/feedback.png" class="mine-icon" alt="">
+                </div>
+                <div class="item-inner no-after">
+                  <div class="item-title mine-text">
+                    <div class="mine-name">意见反馈</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mine-inner">
+            <div class="item-content item-link mine-box">
+              <div class="item-media">
+                <img src="assets/images/mine/feedback.png" class="mine-icon" alt="">
+              </div>
+              <div class="item-inner no-after">
+                <div class="item-title mine-text">
+                  <div class="mine-name">商户合作</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-content item-link">
+            <div class="item-media">
+              <img src="assets/images/mine/aboutus.png" class="mine-icon" alt="">
+            </div>
+            <div class="item-inner no-after">
+              <div class="item-title mine-text">
+                <div class="mine-name">关于我们</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--标签页-->
+    </div>
+    <!--签名弹窗-->
+    <div class="m-alert j-plate_name" style="display: none">
+      <div class="m-name-layer">
+        <div class="close_box j-close j-sure_close" data-close-obj=".j-plate_name">
+          <img class='close_img' src="assets/images/other/xx-2.png" alt="">
+        </div>
+        <div class="name-layer-content">
+            <div class="m-name-input">
+              <input type="text" placeholder="设置签名，15字以内">
+            </div>
+            <span class="name-btn">保存</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<!-- rev-hash -->
+<!-- build:js assets/scripts/vendor/modernizr.js -->
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/js-cookie/src/js.cookie.js"></script>
+<script src="/bower_components/js-base64/base64.js"></script>
+<script src="/bower_components/arg.js/dist/arg-1.2.js"></script>
+<script src="/bower_components/jquery-md5/jquery.md5.js"></script>
+<script src="/bower_components/light7/dist/js/light7.js"></script>
+<script src="/bower_components/template.js/template.js"></script>
+<script src="/bower_components/fecha/fecha.js"></script>
+<script src="/bower_components/swiper/dist/js/swiper.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/common.js -->
+<script src="_assets/scripts/common.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/mine.js -->
+<script src="_assets/scripts/mine.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/main.js -->
+<script src="_assets/scripts/main.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+
+</body>
+</html>

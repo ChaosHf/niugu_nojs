@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <title>牛股世界</title>
+
+  <!-- rev-hash -->
+  <!-- build:css assets/css/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/light7/dist/css/light7.css" />
+  <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- end -->
+  <!-- rev-hash -->
+  <!-- build:css assets/css/niugu.css -->
+  <link rel="stylesheet" href="/assets/css/niugu.css">
+  <!-- endbuild -->
+  <!-- end -->
+  <!-- rev-hash -->
+  <!-- build:css assets/css/rem.css -->
+  <link rel="stylesheet" href="/assets/css/rem.css">
+  <!-- endbuild -->
+  <!-- end -->
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+  <!-- 单个page ,第一个.page默认被展示-->
+  <div id="page-note-read" class="page">
+    <!--工具栏-->
+    <nav class="bar bar-tab">
+      <a class="tab-item active" href="index.html" external>
+        <span class="icon icon-niugu"></span>
+        <span class="tab-label">牛股</span>
+      </a>
+      <a class="tab-item" href="arena.html" external>
+        <span class="icon icon-arena"></span>
+        <span class="tab-label">擂台</span>
+      </a>
+      <a class="tab-item" href="media.html" external>
+        <span class="icon icon-media"></span>
+        <span class="tab-label">自媒体</span>
+      </a>
+      <a class="tab-item" href="release.html" external>
+        <span class="icon icon-release"></span>
+        <span class="tab-label">发布</span>
+      </a>
+      <a class="tab-item" href="mine.html" external>
+        <span class="icon icon-mine"></span>
+        <span class="tab-label">我的</span>
+      </a>
+    </nav>
+    <!--我的信息-->
+    <div class="content">
+      <div class="per-info">
+        <img src="assets/images/index/n-avatar.png" alt="" class="note-avatar">
+        <div class="note-per">
+          <div class="note-per-title">超级牛股王</div>
+          <div class="note-per-content">38篇笔记<span>成功率58.95%</span></div>
+        </div>
+        <div class="note-concern">+加关注</div>
+        <div class="note-concern haven" style="display: none">已关注</div>
+      </div>
+      <div class="note-content">
+        <div class="note-bag">
+          <div class="note-bag-money">￥999</div>
+          <div class="note-bag-title">红包</div>
+        </div>
+        <div class="note-title">涨停看这里</div>
+        <div class="note-read-content">
+          <div class="note-read-panel">
+            <div class="read-name">股票</div>
+            <div class="read-content">天药股份</div>
+            <div class="read-num">600488</div>
+          </div>
+          <div class="note-read-panel">
+            <div class="read-name">目标</div>
+            <div class="read-content">涨4%</div>
+            <div class="read-num">待收盘</div>
+          </div>
+          <div class="note-read-panel">
+            <div class="read-name">起始</div>
+            <div class="read-content">待收盘</div>
+            <div class="read-num">03-09<span>09:30</span></div>
+          </div>
+          <div class="note-read-panel">
+            <div class="read-name">截止</div>
+            <div class="read-content">待收盘</div>
+            <div class="read-num">03-09<span>09:30</span></div>
+          </div>
+          <div class="note-read-panel">
+            <div class="read-name">逻辑</div>
+            <div class="read-content">6.52买入，持股待涨，达到价可出</div>
+          </div>
+        </div>
+        <div class="pay-content">
+          <div class="pay-panel">
+            <div class="pay-box j-red_click">
+              <img src="assets/images/note/icon-1.png" alt="" class="pay-img">
+              <div class="pay-num">
+                <span class="pay-icon"></span><span class="pay-text">6.66</span>
+              </div>
+              <div class="pay-title">涨疯啦！</div>
+            </div>
+            <div class="pay-box j-red_click">
+              <img src="assets/images/note/icon-2.png" alt="" class="pay-img">
+              <div class="pay-num">
+                <span class="pay-icon"></span><span class="pay-text">131.40</span>
+              </div>
+              <div class="pay-title">老师我爱你</div>
+            </div>
+            <div class="pay-box j-red_click">
+              <img src="assets/images/note/icon-3.png" alt="" class="pay-img">
+              <div class="pay-num">
+                <span class="pay-icon"></span><span class="pay-text">288.88</span>
+              </div>
+              <div class="pay-title">涨停包</div>
+            </div>
+            <div class="pay-box j-red_click">
+              <img src="assets/images/note/icon-4.png" alt="" class="pay-img">
+              <div class="pay-num">
+                <span class="pay-icon"></span><span class="pay-text">520.00</span>
+              </div>
+              <div class="pay-title">五杀超神</div>
+            </div>
+            <div class="pay-box j-red_click">
+              <img src="assets/images/note/icon-5.png" alt="" class="pay-img">
+              <div class="pay-num">
+                <span class="pay-icon"></span><span class="pay-text">2017.18</span>
+              </div>
+              <div class="pay-title">金牛附身</div>
+            </div>
+          </div>
+          <div class="pay-button j-red_click">立即打赏</div>
+        </div>
+      </div>
+      <div class="read-content">
+        <div class="read-content-title">
+          <span class="read-title-icon"></span>
+          <span class="read-title-text">576人已阅</span>
+        </div>
+        <div class="read-content-box">
+          <div class="read-content-panel">
+            <div class="read-box-left">
+              <img src="assets/images/index/n-avatar.png" alt="" class="read-avatar">
+              <div class="read-per">
+                <div class="read-per-title">超级牛股王超级牛股王超级牛股王超级牛股王</div>
+                <div class="read-per-content">老师我爱你老师我爱你老师我爱你老师我爱你</div>
+              </div>
+            </div>
+            <div class="read-time">
+              <div class="read-time-title"><span class="read-time-icon"></span><span class="read-time-text">288.88</span></div>
+              <div class="read-time-content"><span class="read-time-date">2017-04-07</span>00:36:28</div>
+            </div>
+          </div>
+          <div class="read-content-panel">
+            <div class="read-box-left">
+              <img src="assets/images/index/n-avatar.png" alt="" class="read-avatar">
+              <div class="read-per">
+                <div class="read-per-title">超级牛股王超级牛股王超级牛股王超级牛股王</div>
+                <div class="read-per-content">老师我爱你老师我爱你老师我爱你老师我爱你</div>
+              </div>
+            </div>
+            <div class="read-time">
+              <div class="read-time-title"><span class="read-time-icon"></span><span class="read-time-text">288.88</span></div>
+              <div class="read-time-content"><span class="read-time-date">2017-04-07</span>00:36:28</div>
+            </div>
+          </div>
+          <div class="read-content-panel">
+            <div class="read-box-left">
+              <img src="assets/images/index/n-avatar.png" alt="" class="read-avatar">
+              <div class="read-per">
+                <div class="read-per-title">超级牛股王超级牛股王超级牛股王超级牛股王</div>
+                <div class="read-per-content">老师我爱你老师我爱你老师我爱你老师我爱你</div>
+              </div>
+            </div>
+            <div class="read-time">
+              <div class="read-time-title"><span class="read-time-icon"></span><span class="read-time-text">288.88</span></div>
+              <div class="read-time-content"><span class="read-time-date">2017-04-07</span>00:36:28</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="note-qrcode">
+        <div class="qrcode-text">所有笔记仅供学习</div>
+        <img src="assets/images/note/qrcode.png" alt="" class="qrcode-img">
+      </div>
+    </div>
+    <!--红包弹窗-->
+    <div class="m-alert j-plate_red" style="display: none">
+      <div class="m-red-layer">
+        <div class="close_box j-close j-sure_close" data-close-obj=".j-plate_red">
+          <img class='close_img' src="assets/images/other/xx.png" alt="">
+        </div>
+        <div class="red-layer-banner">
+          <img src="assets/images/index/avatar.png" alt="" class="red-avatar">
+          <div class="red-name">超级牛股王</div>
+        </div>
+        <div class="red-layer-content">
+          <img src="assets/images/note/icon-1.png" alt="" class="red-c-img">
+          <div class="red-c-money">131.40</div>
+          <input type="text" class="red-c-input" placeholder="你想说什么?立即留言">
+          <div class="red-c-button">打赏</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<!-- rev-hash -->
+<!-- build:js assets/scripts/vendor/modernizr.js -->
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/js-cookie/src/js.cookie.js"></script>
+<script src="/bower_components/js-base64/base64.js"></script>
+<script src="/bower_components/arg.js/dist/arg-1.2.js"></script>
+<script src="/bower_components/jquery-md5/jquery.md5.js"></script>
+<script src="/bower_components/light7/dist/js/light7.js"></script>
+<script src="/bower_components/template.js/template.js"></script>
+<script src="/bower_components/fecha/fecha.js"></script>
+<script src="/bower_components/swiper/dist/js/swiper.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/common.js -->
+<script src="_assets/scripts/common.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/note.js -->
+<script src="_assets/scripts/note.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/main.js -->
+<script src="_assets/scripts/main.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+
+</body>
+</html>

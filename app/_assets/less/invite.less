@@ -1,0 +1,160 @@
+/* Variables */
+@import "base/variables.less";
+/* Mixins */
+@import "base/mixins.less";
+@import "base/_mixins";
+#page-invite{
+  background: #fff;
+  .content{
+    .banner{
+      img{
+        width: 100%;
+        display: block;
+      }
+      .banner-text{
+        font-size: 12.5px;
+        color: #2b2728;
+        text-align: center;
+        padding: 8.5px 13px 0 13px;
+        line-height: 1.8;
+      }
+    }
+    .icon-content{
+      margin: 0;
+      .icon-block{
+        padding: 15px 0;
+      }
+      .icon-box{
+        margin: 0 43px;
+        display: flex;
+        .icon-small{
+          flex: 1;
+          text-align: center;
+          img{
+            display: inline-block;
+            width: 41px;
+            height: 41px;
+          }
+          .icon-title{
+            display:  block;
+            font-size: 12px;
+            color: #111111;
+          }
+        }
+      }
+      .icon-box:first-child{
+        padding-bottom: 13px;
+      }
+      .qr-block{
+        padding: 15px 0;
+        img{
+          display: block;
+          margin: 0 auto;
+          width: 163px;
+          height: 163px;
+        }
+      }
+    }
+    .invite-code{
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      background: #f3ce97;
+      width: 265px;
+      height: 44px;
+      line-height: 44px;
+      font-size: 13px;
+      color: #b18b52;
+    }
+    .invite-ps{
+      font-size: 10px;
+      color: #9d9d9d;
+      text-align: center;
+      margin: 13px 9px;
+    }
+    .invite-spread{
+      color:#fff;
+      text-align: center;
+      font-size: 13px;
+      margin: 0 auto;
+      width: 90px;
+      background-color: #f05724;
+      height: 44px;
+      line-height: 44px;
+      border-radius: 9px;
+    }
+    .invite-mine{
+      margin: 13px 0;
+      background: #140a09;
+      padding: 10px 35px;
+      font-size: 15px;
+      .item-inner{
+        .hairline-remove(bottom);
+        padding: 0;
+        .mine-left{
+          color: #f3ce97;
+          .mine-money{
+            color: #f24e24;
+          }
+        }
+        .mine-right{
+          text-decoration: underline;
+          color: #0782ff;
+        }
+      }
+    }
+    .invite-lists{
+      background: #140a09;
+      .lists-box{
+        margin: 0 15px;
+        .lists-title{
+          text-align: center;
+          font-size: 15px;
+          color: #f3ce97;
+          border-bottom: 1px #f3ce97 dashed;
+          padding: 12px 0;
+          .lists-money{
+            color: #f24e24;
+          }
+        }
+        .lists-content{
+          padding: 15px 0;
+          font-size: 13px;
+          color: #969696;
+          .lists-text{
+            display: flex;
+            .lists-no{
+              flex: 1;
+            }
+            .lists-name{
+              flex: 2;
+            }
+            .lists-status{
+              width: 120px;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+  .cash-content{
+    .cash-box{
+      margin: 30px 0 10px 0;
+    }
+    .cash-title{
+      width: 60px;
+      text-align: right;
+      font-size: 14px;
+    }
+    .cash-input{
+      width: 120px;
+      height: 30px;
+      border:1px solid #999999;
+      border-radius: 5px;
+    }
+    .cash-end{
+      width: 20px;
+    }
+  }
+}

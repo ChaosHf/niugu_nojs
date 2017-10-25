@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <title>牛股世界</title>
+
+  <!-- rev-hash -->
+  <!-- build:css assets/css/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/light7/dist/css/light7.css" />
+  <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- end -->
+  <!-- rev-hash -->
+  <!-- build:css assets/css/niugu.css -->
+  <link rel="stylesheet" href="/assets/css/niugu.css">
+  <!-- endbuild -->
+  <!-- end -->
+
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+  <!-- 单个page ,第一个.page默认被展示-->
+  <div id="page-personal" class="page">
+    <!--工具栏-->
+    <div class="content">
+      <!--我的信息-->
+      <div class="list-block">
+        <div class="mine-content">
+          <div class="mine-inner">
+            <img class="inner-avatar" src="assets/images/index/avatar.png"/>
+            <div class="inner-name">超级牛股王</div>
+            <div class="inner-text">擅长趋势操作 择时得当 盈利能持有</div>
+            <div class="inner-btn"><span>关注</span><span>赞赏</span></div>
+            <div class="inner-ps">本策略已有<span class="u-red">223人</span>赞赏</div>
+            <div class="mine-info">
+              <div class="info-box">
+                <div class="info-num">3篇</div>
+                <div class="info-title">历史笔记</div>
+              </div>
+              <div class="info-box">
+                <div class="info-num">100.00%</div>
+                <div class="info-title">累计收益</div>
+              </div>
+              <div class="info-box">
+                <div class="info-num">8.83%</div>
+                <div class="info-title">月收益率</div>
+              </div>
+              <div class="info-box">
+                <div class="info-num">0.00%</div>
+                <div class="info-title">周收益率</div>
+              </div>
+              <div class="info-box">
+                <div class="info-num">3次</div>
+                <div class="info-title">擂主</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-echarts-content">
+            <div id="j-echarts" class="m-echarts"></div>
+            <div class="m-choose">
+              <div class="m-choose-box j-choose">
+                <span class="u-checkbox u-check_n"></span><span>累计净值</span>
+              </div>
+              <div class="m-choose-box j-choose">
+                <span class="u-checkbox u-check_r"></span><span>净利润</span>
+              </div>
+            </div>
+            <div style="clear: both"></div>
+          </div>
+          <div class="m-points"><span class="u-point-title">他的观点</span><span class="m-ponit-num">2条</span></div>
+          <div class="m-note-content">
+            <div class="m-note-title">
+              <div class="u-note-title">策略</div>
+              <div class="u-note-title">目标收益</div>
+              <div class="u-note-title">实际收益</div>
+              <div class="u-note-title">状态</div>
+            </div>
+            <div class="m-note-panel">
+              <div class="m-note-box">
+                <div class="u-box-l-t">603022</div>
+                <div class="u-box-l-b">新联通</div>
+              </div>
+              <div class="m-note-box">2%</div>
+              <div class="m-note-box">-10.54%</div>
+              <div class="m-note-box">
+                <div class="u-box-r-t">未达标</div>
+                <div class="u-box-r-b">06/23-07/28</div>
+              </div>
+            </div>
+            <div class="m-note-panel">
+              <div class="m-note-box">
+                <div class="u-box-l-t">603022</div>
+                <div class="u-box-l-b">新联通</div>
+              </div>
+              <div class="m-note-box">2%</div>
+              <div class="m-note-box">-10.54%</div>
+              <div class="m-note-box">
+                <div class="u-box-r-t u-red">未达标</div>
+                <div class="u-box-r-b">06/23-07/28</div>
+              </div>
+            </div>
+          </div>
+          <div class="m-more">他没有更多笔记了，查看<a class="u-more" href="#">更多高手</a></div>
+        </div>
+
+      </div>
+      <!--标签页-->
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<!-- rev-hash -->
+<!-- build:js assets/scripts/vendor/modernizr.js -->
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/js-cookie/src/js.cookie.js"></script>
+<script src="/bower_components/js-base64/base64.js"></script>
+<script src="/bower_components/arg.js/dist/arg-1.2.js"></script>
+<script src="/bower_components/jquery-md5/jquery.md5.js"></script>
+<script src="/bower_components/light7/dist/js/light7.js"></script>
+<script src="/bower_components/template.js/template.js"></script>
+<script src="/bower_components/fecha/fecha.js"></script>
+<script src="/bower_components/swiper/dist/js/swiper.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<!-- end -->
+<!-- rev-hash -->
+<!-- build:js assets/scripts/vendor/echarts.js -->
+<script src="/bower_components/echarts/dist/echarts.min.js"></script>
+<!-- endbuild -->
+<!-- end -->
+<!-- rev-hash -->
+<!-- build:js assets/scripts/common.js -->
+<script src="_assets/scripts/common.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/personal.js -->
+<script src="_assets/scripts/personal.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/main.js -->
+<script src="_assets/scripts/main.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <title>牛股世界</title>
+
+  <!-- rev-hash -->
+  <!-- build:css assets/css/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/light7/dist/css/light7.css" />
+  <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- end -->
+  <!-- rev-hash -->
+  <!-- build:css assets/css/niugu.css -->
+  <link rel="stylesheet" href="/assets/css/niugu.css">
+  <!-- endbuild -->
+  <!-- end -->
+  <!-- rev-hash -->
+  <!-- build:css assets/css/rem.css -->
+  <link rel="stylesheet" href="/assets/css/rem.css">
+  <!-- endbuild -->
+  <!-- end -->
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+  <!-- 单个page ,第一个.page默认被展示-->
+  <div id="page-release" class="page">
+    <nav class="bar bar-tab">
+      <a class="tab-item " href="index.html" external>
+        <span class="icon icon-niugu"></span>
+        <span class="tab-label">牛股</span>
+      </a>
+      <a class="tab-item" href="arena.html" external>
+        <span class="icon icon-arena"></span>
+        <span class="tab-label">擂台</span>
+      </a>
+      <a class="tab-item" href="media.html" external>
+        <span class="icon icon-media"></span>
+        <span class="tab-label">自媒体</span>
+      </a>
+      <a class="tab-item active" href="release.html" external>
+        <span class="icon icon-release"></span>
+        <span class="tab-label">发布</span>
+      </a>
+      <a class="tab-item" href="mine.html" external>
+        <span class="icon icon-mine"></span>
+        <span class="tab-label">我的</span>
+      </a>
+    </nav>
+    <div class="content">
+      <!--标签页-->
+      <div class="buttons-tab">
+        <a href="#" class="tabs-link active button j-link" data-tab=".tabs1" external>推股票</a>
+        <a href="#" class="tabs-link button j-link" data-tab=".tabs2" external>写观点</a>
+      </div>
+      <div class="release-tab">
+        <div class="tabs">
+          <div class="tabs1">
+            <div class="list-block viewpoint-content">
+              <div class="viewpoint-title">
+                <div class="title-left disinblock">股票</div>
+                <div class="title-right f-r">均不要填写单位(%,元)</div>
+              </div>
+              <div class="item-content viewpoint-column">
+                <div class="item-inner col-inner">
+                  <div class="item-title label col-title">代码</div>
+                  <input class="item-input col-input" type="number" placeholder="请填写六位数股票代码">
+                </div>
+              </div>
+              <div class="viewpoint-title">
+                <div class="title-left disinblock">涨幅预期</div>
+              </div>
+              <div class="item-content viewpoint-column">
+                <div class="item-inner col-inner">
+                  <div class="item-title label col-title">时间</div>
+                  <div class="item-input">
+                    <select>
+                      <option>一周</option>
+                      <option>两周</option>
+                      <option>一月</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="item-content viewpoint-column">
+                <div class="item-inner col-inner">
+                  <div class="item-title label col-title">涨幅</div>
+                  <input class="item-input col-input" type="number" placeholder="预测涨幅，1%-20%之间" maxlength="2">
+                  <span>%</span>
+                </div>
+              </div>
+              <div class="viewpoint-title">
+                <div class="title-left disinblock">我的策略</div>
+                <div class="title-right f-r look-rule">查看规则>></div>
+              </div>
+              <div class="item-content viewpoint-column">
+                <div class="item-inner col-inner">
+                  <div class="item-title label col-title">标题</div>
+                  <input class="item-input col-input" type="number" placeholder="填写策略的标题，1-20字内">
+                </div>
+              </div>
+              <div class="item-content viewpoint-column align-top special-content">
+                <div class="item-inner col-inner">
+                  <div class="item-title label col-title">策略</div>
+                  <div class="item-input">
+                    <textarea class="col-input"
+                              placeholder="填写交易策略，1-400字内，建议写上买入价格区间。技术为主，基面为辅，禁止消息股庄股传播，如有发现，一律封号！ "></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="item-content viewpoint-column">
+                <div class="item-inner col-inner">
+                  <div class="item-title label col-title">查看费</div>
+                  <input class="item-input col-input" type="number" placeholder="0~500元">
+                </div>
+              </div>
+              <div class="item-content viewpoint-column">
+                <div class="item-inner col-inner">
+                  <div class="item-title label col-title"><span>押</span><span class="pay-icon"></span></div>
+                  <input class="item-input col-input" type="number" placeholder="自定义红包">
+                </div>
+              </div>
+              <div class="viewpoint-title">
+                <div class="title-left disinblock">自定义红包大小，当未达成预期时平分给阅读者</div>
+              </div>
+              <div class="viewpoint-submit">支付并发布</div>
+            </div>
+          </div>
+          <div class="tab tabs2">
+            <div class="list-block viewpoint-content">
+              <div class="item-content viewpoint-column special-col">
+                <div class="item-inner col-inner">
+                  <div class="item-title label col-title">标题</div>
+                  <input class="item-input col-input" type="number" placeholder="请输入观点标题">
+                </div>
+              </div>
+              <div class="item-content viewpoint-column col-margin">
+                <textarea placeholder="输入观点" class="col-textarea"></textarea>
+                <input type="file" class="j-upload" style="display: none" name="file" accept="image/jpeg,image/png,image/gif">
+                <img src="assets/images/other/photo.png" alt="" class="photo-submit needsclick j-submit">
+              </div>
+              <div class="item-content viewpoint-column col-margin">
+                <div class="item-inner col-inner">
+                  <div class="item-title col-title" style="width: 75%">封面照片是否显示在正文中</div>
+                  <div class="item-input switch-width">
+                    <label class="label-switch">
+                      <input type="checkbox">
+                      <div class="checkbox"></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="viewpoint-submit">发布</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<!-- rev-hash -->
+<!-- build:js assets/scripts/vendor/modernizr.js -->
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/js-cookie/src/js.cookie.js"></script>
+<script src="/bower_components/js-base64/base64.js"></script>
+<script src="/bower_components/arg.js/dist/arg-1.2.js"></script>
+<script src="/bower_components/jquery-md5/jquery.md5.js"></script>
+<script src="/bower_components/light7/dist/js/light7.js"></script>
+<script src="/bower_components/template.js/template.js"></script>
+<script src="/bower_components/fecha/fecha.js"></script>
+<script src="/bower_components/swiper/dist/js/swiper.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/common.js -->
+<script src="_assets/scripts/common.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/release.js -->
+<script src="_assets/scripts/release.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/main.js -->
+<script src="_assets/scripts/main.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+</body>
+</html>

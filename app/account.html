@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <title>我的账户</title>
+
+  <!-- rev-hash -->
+  <!-- build:css assets/css/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/light7/dist/css/light7.css" />
+  <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- end -->
+  <!-- rev-hash -->
+  <!-- build:css assets/css/niugu.css -->
+  <link rel="stylesheet" href="/assets/css/niugu.css">
+  <!-- endbuild -->
+  <!-- end -->
+
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+  <!-- 单个page ,第一个.page默认被展示-->
+  <div id="page-account" class="page">
+    <!--工具栏-->
+    <nav class="bar bar-tab">
+      <a class="tab-item" href="index.html" external>
+        <span class="icon icon-niugu"></span>
+        <span class="tab-label">牛股</span>
+      </a>
+      <a class="tab-item " href="arena.html" external>
+        <span class="icon icon-arena"></span>
+        <span class="tab-label">擂台</span>
+      </a>
+      <a class="tab-item" href="media.html" external>
+        <span class="icon icon-media"></span>
+        <span class="tab-label">自媒体</span>
+      </a>
+      <a class="tab-item" href="release.html" external>
+        <span class="icon icon-release"></span>
+        <span class="tab-label">发布</span>
+      </a>
+      <a class="tab-item active" href="mine.html" external>
+        <span class="icon icon-mine"></span>
+        <span class="tab-label">我的</span>
+      </a>
+    </nav>
+    <div class="content">
+      <!--我的信息-->
+      <div class="list-block">
+        <div class="account-box">
+          <div class="account-info">
+            <div class="account-title">
+              <span class="account-left">账户余额（元）</span>
+              <a href="account-detail.html" class="account-detail" external>账户明细</a>
+            </div>
+            <div class="account-money">5.00</div>
+            <div class="account-buttons">
+              <div class="account-button account-enchashment j-enchashment">提现</div>
+              <div class="account-button account-recharge j-recharge">充值</div>
+            </div>
+            <div class="account-buttons">
+              <div class="account-num f-l">提现总额<span>0</span></div>
+              <div class="account-num f-r">充值总额<span>0</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="account-box">
+          <div class="account-list">
+            <div class="account-text">
+              <span class="account-name">冻结金额</span><span class="account-no f-r">50</span>
+            </div>
+            <div class="account-ps">
+              <div class="account-psl">冻结阅读费<span>0</span></div>
+              <div class="account-psl">笔记押金<span>0</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="account-box">
+          <div class="account-list">
+            <div class="account-text">
+              <span class="account-name">创作笔记收入 </span><span class="account-no f-r">+50</span>
+            </div>
+            <div class="account-text">
+              <span class="account-name">收割作者押金</span><span class="account-no f-r">+50</span>
+            </div>
+            <div class="account-text no-after">
+              <span class="account-name">读者赞赏收入</span><span class="account-no f-r">+50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-alert_account j-alert_account" style="display: none">
+      <div class="m-alert_box">
+        <div class="close_box j-close" data-close-obj=".j-alert_account">
+          <img class='close_img' src="assets/images/mine/xx-2.png" alt="">
+        </div>
+        <div class="m-account_box">
+          <div class="m-account_s">
+            <div class="m-account_num"><div class="m-box active">5元</div></div>
+            <div class="m-account_num"><div class="m-box">20元</div></div>
+            <div class="m-account_num"><div class="m-box">50元</div></div>
+          </div>
+          <div class="m-account_s">
+            <div class="m-account_num"><div class="m-box">80元</div></div>
+            <div class="m-account_num"><div class="m-box">100元</div></div>
+            <div class="m-account_num"><div class="m-box">200元</div></div>
+          </div>
+        </div>
+        <div class="button_box f-cb">
+          <!--<button type="button" class="button-left j-plate_change">修改</button>-->
+          <div class="button_sure j-sure">确认</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<!-- rev-hash -->
+<!-- build:js assets/scripts/vendor/modernizr.js -->
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/js-cookie/src/js.cookie.js"></script>
+<script src="/bower_components/js-base64/base64.js"></script>
+<script src="/bower_components/arg.js/dist/arg-1.2.js"></script>
+<script src="/bower_components/jquery-md5/jquery.md5.js"></script>
+<script src="/bower_components/light7/dist/js/light7.js"></script>
+<script src="/bower_components/template.js/template.js"></script>
+<script src="/bower_components/fecha/fecha.js"></script>
+<script src="/bower_components/swiper/dist/js/swiper.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/common.js -->
+<script src="_assets/scripts/common.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/account.js -->
+<script src="_assets/scripts/account.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+<!-- rev-hash -->
+<!-- build:js assets/scripts/main.js -->
+<script src="_assets/scripts/main.js"></script>
+<!-- endbuild -->
+<!-- end -->
+
+
+</body>
+</html>
