@@ -323,11 +323,84 @@
   }
   .m-rule-layer{
     position: fixed;
-    top:30px;
+    top:60px;
     width: 280px;
     left:50%;
+    height: 400px;
+    overflow-y: scroll;
     margin-left: -140px;
     background: #fff;
     text-align: center;
+    .m-rule-content{
+      padding: 30px 15px 10px 15px;
+      text-align: left;
+      font-size: 12px;
+      .u-rule-title{
+        color:#f42241;
+      }
+      .u-rule-text{
+        span{
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .m-win-layer{
+    width: 320px;
+    height: 290px;
+    background: url('../images/activity/alert_win.png')no-repeat center;
+    background-size: 100%;
+    position: fixed;
+    top:60px;
+    left: 0;
+    right:0;
+    text-align: center;
+    .m-win-layer-content{
+      padding: 210px 40px 0 40px;
+      .u-win-money{
+        color:#feef00;
+        font-size: 13px;
+      }
+      .m-win-box {
+        color:#fff;
+        text-align: left;
+        font-size: 10px;
+        padding-bottom: 8px;
+        img{
+          display: inline-block;
+          vertical-align: middle;
+          width: 31px;
+          height: 31px;
+        }
+        .m-win-info{
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      .u-win-tips{
+        color:#8c88a4;
+        font-size: 8.5px;
+      }
+    }
+  }
+  .m-win-layer_first{
+    background: url('../images/activity/alert_first.png')no-repeat center;
+    background-size: 100%;
+  }
+  .m-win-layer_second{
+    background: url('../images/activity/alert_second.png')no-repeat center;
+    background-size: 100%;
+  }
+  .m-win-layer_third{
+    background: url('../images/activity/alert_third.png')no-repeat center;
+    background-size: 100%;
+  }
+  .u-win-share{
+    position: fixed;
+    width: 115px;
+    height: 35px;
+    top:360px;
+    margin-left: -58px;
+    left:50%;
   }
 }

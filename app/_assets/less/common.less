@@ -3,8 +3,11 @@
 /* Mixins */
 @import "base/mixins.less";
 @import "base/_mixins.less";
-.content{
-  bottom:2.5rem;
+.bar-tab ~ .content, .bar-tab ~ .page .content{
+  bottom:40px;
+}
+.bar-tab{
+  height: 40px;
 }
 p{
   margin: 0;
@@ -78,11 +81,24 @@ a.button:active {
 }
 
 .icon:before {
-  font-size: 20px;
+  font-size: 14.5px;
 }
-
-.tab-label {
+.bar-tab .tab-item{
+  height: 40px;
+}
+.bar-tab .tab-item .icon{
+  width: 14.5px;
+  height: 14.5px;
+  line-height: 14.5px;
+  top:0;
+  padding: 0;
+}
+.bar-tab .tab-item .icon{
+  font-size: 14.5px;
+}
+.bar-tab .tab-item .icon ~ .tab-label {
   font-size: 10px;
+  top:-0.15rem;
 }
 //遮罩层
 .m-alert {
