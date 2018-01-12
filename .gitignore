@@ -5,5 +5,4 @@ node_modules
 bower_components
 test/bower_components
 tar
-build/production
-build/dist
+build
