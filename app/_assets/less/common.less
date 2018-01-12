@@ -3,11 +3,17 @@
 /* Mixins */
 @import "base/mixins.less";
 @import "base/_mixins.less";
+html,body{
+  font-family: @font-family-default;
+}
+.content{
+  bottom: 48px;
+}
 .bar-tab ~ .content, .bar-tab ~ .page .content{
-  bottom:40px;
+  bottom:48px;
 }
 .bar-tab{
-  height: 40px;
+  height: 48px;
 }
 p{
   margin: 0;
@@ -20,6 +26,12 @@ p{
 }
 .disblock {
   display: block;
+}
+.hide {
+	display:none;
+}
+.show {
+	display:block;	
 }
 .disinblock{
   display: inline-block;
@@ -36,7 +48,7 @@ p{
     border-color: #f42241;
   }
   .tabs-link{
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 a.button:active {
@@ -74,17 +86,12 @@ a.button:active {
   background-color: #fcfcfc;
 }
 
-.bar-tab {
-  .tab-item.active {
-    color: #f42241;
-  }
-}
 
 .icon:before {
-  font-size: 14.5px;
+  font-size: 16px;
 }
 .bar-tab .tab-item{
-  height: 40px;
+  height: 48px;
 }
 .bar-tab .tab-item .icon{
   width: 14.5px;
@@ -92,13 +99,15 @@ a.button:active {
   line-height: 14.5px;
   top:0;
   padding: 0;
-}
-.bar-tab .tab-item .icon{
   font-size: 14.5px;
 }
+
 .bar-tab .tab-item .icon ~ .tab-label {
-  font-size: 10px;
+  font-size: 12px;
   top:-0.1rem;
+}
+.bar-tab .tab-item.active, .bar-tab .tab-item:active{
+  color: #f42241;
 }
 //遮罩层
 .m-alert {
@@ -267,8 +276,8 @@ a.button:active {
   font-size: 0;
   .note-avatar{
     vertical-align: middle;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
   }
   .note-per{
@@ -278,12 +287,12 @@ a.button:active {
     line-height: 1;
     .note-per-title{
       color: #111;
-      font-size: 15px;
+      font-size: 18px;
       padding-bottom: 4px;
     }
     .note-per-content{
       color: #bbb;
-      font-size: 10px;
+      font-size: 12px;
       span{
         padding-left: 5px;
       }
@@ -295,13 +304,13 @@ a.button:active {
     right: 8px;
     bottom: 50%;
     margin-bottom: -11px;
-    width: 60px;
-    height: 22px;
-    line-height: 22px;
-    font-size: 11px;
+    width: 72px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 13px;
     color: #f42241;
     border: 1px solid #f42241;
-    border-radius: 11px;
+    border-radius: 28px;
     text-align: center;
     &.haven{
       color :#bbb;
@@ -310,17 +319,13 @@ a.button:active {
   }
 
 }
-.tabs .tab{
-  padding-bottom: 10px;
-}
+
 .u-getmore{
-  margin: 10px auto 0 auto;
-  border: 1px solid #f42241;
-  width: 80px;
-  height: 24px;
-  line-height: 24px;
-  border-radius: 24px;
+  background: #fff;
   text-align: center;
-  font-size: 10px;
-  color:#f42241;
+  display: block;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  color:#0894ec;
 }

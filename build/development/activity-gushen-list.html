@@ -67,7 +67,7 @@
       <!--标签页-->
       <div class="m-title">
         <div class="m-title-box u-red" style="line-height: 1.5">
-          前三名均<br>获得奖励
+          <span>前三名均</span><br>获得奖励
         </div>
         <div class="m-title-tabs">
           <div class="m-box">
@@ -156,7 +156,7 @@
         </div>
       </div>
     </div>
-    <div class="m-alert j-plate_win" style="">
+    <div class="m-alert j-plate_win" style="display:none">
       <!--第一名下面class后加上 ‘m-win-layer_first’  第二名 ‘m-win-layer_second’  第三名 m-win-layer_third-->
       <div class="m-win-layer">
         <div class="m-win-layer-content">
@@ -176,7 +176,83 @@
     <div class="m-alert j-plate_share" style="display: none">
       <img src="assets/images/other/share.png" alt="" class="m-alert-share">
     </div>
-
+    <div class="m-alert j-plate_pay" style="display:none">
+      <div class="m-pay-layer">
+        <div class="close_box j-close j-sure_close" data-close-obj=".j-plate_pay">
+          <img class='close_img' src="assets/images/other/xx-2.png" alt="">
+        </div>
+        <div class="m-layer-content">
+          <div class="m-layer-panel">
+            <div class="u-layer-name">牛股</div>
+            <input type="text" class="u-layer-input" placeholder="输入股票代码／拼音首字母">
+          </div>
+          <div class="m-shares">
+            <ul class="m-shares-num">
+              <li>600001</li>
+              <li>600001</li>
+              <li>600001</li>
+              <li>600001</li>
+              <li>600001</li>
+            </ul>
+          </div>
+  
+          <div class="m-layer-panel">
+            <div class="u-layer-name">现价</div>
+            <div class="u-layer-num">9.60</div>
+          </div>
+          <div class="m-layer-panel">
+            <div class="u-layer-name">买价</div>
+            <div class="u-layer-num">9.60</div>
+          </div>
+          <div class="m-layer-panel">
+            <div class="u-layer-name">金币</div>
+            <div class="u-layer-num">200</div>
+          </div>
+        </div>
+        <div class="m-layer-rule">
+          <a href="javascript:void(0)" class="u-layer-rule">点击查看擂台规则</a>
+        </div>
+        <div class="u-layer-join">确定参赛</div>
+      </div>
+    </div>
+    <div class="m-alert j-plate_rule" style="display:none">
+      <div class="m-rule-layer">
+        <div class="close_box j-close j-sure_close" data-close-obj=".j-plate_rule">
+          <img class='close_img' src="assets/images/other/xx-2.png" alt="">
+        </div>
+        <div class="m-rule-content">
+          <p class="u-rule-title">一：最高奖励</p>
+          <p class="u-rule-text">第一名：最高奖励的50%</p>
+          <p class="u-rule-text">第二名：最高奖励的30%</p>
+          <p class="u-rule-text">第三名：最高奖励的20%</p>
+          <p class="u-rule-title">二：报名规则</p>
+          <p class="u-rule-text">
+            <span>今日股神大赛：</span>T日开盘时间段可重复报名进入大赛，次日封闭报名，截止收盘价累计涨幅最多者依次获得奖励。
+          </p>
+          <p class="u-rule-text">
+            <span>一周股王赛：</span>前四个交易日开放报名，第五交易日封闭报名，截止收盘价累计涨幅最多者依次获得奖励。
+          </p>
+          <p class="u-rule-text">
+            <span>月度选股大赛：</span>前三周开放报名，第四周开始进入封闭期，截止收盘价累计涨幅最多者依次获得奖励。
+          </p>
+          <p class="u-rule-text">
+            <span>季度股神：</span>前十周开放报名，2周封闭期，截止收盘价累计涨幅最多者依次获得奖励。
+          </p>
+          <p class="u-rule-text">
+            <span>年度冠军挑战赛：</span>十一个月开放报名期，最后一个月进入封闭阶段，截止收盘价累计涨幅最多者依次获得奖励。
+          </p>
+          <p class="u-rule-text">
+            <span>大赛报名费持续并入最高奖励，报名人数越多，奖励越丰厚！
+            </span>
+          </p>
+          <p class="u-rule-title">三：报酬领取方式</p>
+          <p class="u-rule-text">实物大奖赛：登记邮寄地址及联系方式，三个工作日内发货
+          </p>
+          <p class="u-rule-text">现金奖励：5万以下的奖励，当日到账。5万以上的奖励，将现场领取奖金。并为您制作采访视频。
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>

@@ -1,7 +1,7 @@
 #page-activity-gushen{
   .mine-content{
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
     background: #fcfcfc;
     width: 100%;
     z-index: 999;
@@ -53,6 +53,10 @@
       font-size: 10px;
       line-height: 38px;
       text-align: center;
+      span{
+        display: inline-block;
+        padding-top: 4px;
+      }
     }
     .m-title-tabs{
       flex: 1;
@@ -163,39 +167,40 @@
       width: 300px;
     }
     .m-content-detail{
-      padding: 0 5px;
+      padding: 0 8px;
       .m-panel{
         background: url('../images/activity/bg_panel.png')no-repeat center;
         background-size: 100%;
-        height: 95px;
+        height: 111px;
         padding-right: 8px;
         position: relative;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         .u-flag{
           position: absolute;
           left:-2px;
-          top:4px;
+          top:8px;
           background: url('../images/activity/img_name_1.png')no-repeat center;
-          background-size: 106px 22px;
-          width: 106px;
-          height: 22px;
-          padding-left: 16px;
-          font-size: 13px;
-          line-height: 22px;
+          background-size: 125px 30px;
+          width: 125px;
+          height: 30px;
+          padding-left: 23px;
+          font-size: 15px;
+          line-height: 30px;
           color:#fff;
         }
         .u-flag1{
           background: url('../images/activity/img_name_2.png')no-repeat center;
-          background-size: 106px 22px;
+          background-size: 125px 30px;
         }
         .m-panel-top{
           text-align: right;
-          font-size: 8.8px;
+          font-size: 10px;
           color:#fdfeff;
           padding: 5px 0 0 0;
+          height: 31px;
           .u-img_clock{
-            width: 25px;
-            height: 22px;
+            width: 30px;
+            height: 26px;
             vertical-align: middle;
             display: inline-block;
           }
@@ -206,47 +211,49 @@
         }
         .m-panel-bottom{
           display: flex;
-          padding-top: 10px;
+          padding-top: 14px;
           .m-b-avatar{
             text-align: center;
-            font-size: 10px;
+            font-size: 12px;
             color:#fdfeff;
             margin: 0 20px;
             img{
               display: block;
-              margin: 0 auto;
-              width: 36px;
-              height: 36px;
+              margin: 0 auto 2px auto;
+              width: 42px;
+              height: 42px;
             }
           }
           .m-b-info{
             background: url('../images/activity/bg_info.png')no-repeat center;
-            background-size: 105px 51px;
-            width: 108px;
-            height: 51px;
+            background-size: 123px 56px;
+            width: 123px;
+            height: 56px;
             position: relative;
+            margin-right: 6px;
             .u-b-info-title{
               position: absolute;
-              width: 68px;
-              height: 16px;
+              width: 72px;
+              height: 17px;
+              line-height: 18px;
               top:-1px;
               left:50%;
               text-align: center;
-              margin-left: -34px;
+              margin-left: -36px;
               color:#fdfeff;
-              font-size: 10px;
+              font-size: 12px;
             }
             .m-b-info-content{
               text-align: center;
-              font-size: 13px;
+              font-size: 15px;
               color:#feef00;
               padding-top: 20px;
               img{
-                width: 21px;
-                height: 23px;
+                width: 24px;
+                height: 27px;
               }
               .u-text-free{
-                font-size: 8.5px;
+                font-size: 10px;
                 color:#fdfeff;
               }
             }
@@ -262,33 +269,35 @@
   }
   .m-pay-layer{
     position: fixed;
-    top:80px;
-    width: 256px;
+    top:120px;
+    width: 300px;
     left:50%;
-    margin-left: -128px;
+    margin-left: -150px;
     background: #fff;
     text-align: center;
     .m-layer-content{
       color:#111;
-      font-size: 13px;
-      padding: 40px 12px 0 12px;
+      font-size: 15px;
+      padding: 36px 13px 0 13px;
       text-align: left;
       .m-layer-panel{
         white-space: nowrap;
         height: 26px;
         line-height: 26px;
-        margin-bottom: 10px;
+        margin-bottom: 24px;
         .u-layer-name{
-          margin-right: 15px;
+          width: 60px;
+          
         }
         .u-layer-input{
           padding: 0 5px;
-          width: 184px;
-          height: 25px;
+          width: 210px;
+          height: 30px;
           border:1Px solid #bbb;
+          font-size: 15px;
         }
         .u-layer-num{
-          min-width: 40px;
+          min-width: 60px;
           padding:0 5px;
           height: 25px;
           line-height: 25px;
@@ -296,28 +305,47 @@
           background: #f42241;
           text-align: center;
         }
+
       }
       .m-layer-panel *{
         display: inline-block;
         vertical-align: middle;
       }
-
+      .m-shares{
+        position: relative;
+        width: 100%;
+      }
+      .m-shares-num{
+        position: absolute;
+        top:-28px;
+        background: #fff;
+        left: 30%;
+        z-index: 99;
+        padding: 10px;
+        font-size: 13px;
+        color:#bbb;
+        border: 1Px solid  #e7e7e7;
+        list-style: none;
+        li{
+          padding-bottom: 5px;
+        }
+      }
     }
     .u-layer-rule{
       color:#0072ff;
       border-bottom: 1Px solid #0072ff;
-      font-size:10px;
+      font-size:12px;
       
     }
     .m-layer-rule{
-      margin-bottom: 10px;
+      margin-bottom: 11px;
     }
     .u-layer-join{
-      height: 37px;
+      height: 44px;
       text-align: center;
       color:#fff;
-      font-size: 13px;
-      line-height: 37px;
+      font-size: 15px;
+      line-height: 44px;
       background: #f42241;
     }
   }
@@ -327,12 +355,14 @@
     width: 280px;
     left:50%;
     height: 400px;
-    overflow-y: scroll;
     margin-left: -140px;
     background: #fff;
     text-align: center;
     .m-rule-content{
-      padding: 30px 15px 10px 15px;
+      overflow-y: scroll;
+      margin-top: 30px;
+      height: 360px;
+      padding: 0px 15px 10px 15px;
       text-align: left;
       font-size: 12px;
       .u-rule-title{
@@ -346,13 +376,15 @@
     }
   }
   .m-win-layer{
+ 
     width: 320px;
     height: 290px;
     background: url('../images/activity/alert_win.png')no-repeat center;
     background-size: 100%;
     position: fixed;
     top:60px;
-    left: 0;
+    margin-left: -160px;
+    left: 50%;
     right:0;
     text-align: center;
     .m-win-layer-content{

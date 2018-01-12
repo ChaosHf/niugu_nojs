@@ -1,6 +1,6 @@
 'use strict';
 $(document).on('pageInit', '#page-index', function (e, id, page) {
-
+ console.log(navigator.userAgent.toLowerCase());
   $('.j-rule_click').click(function () {
     $('.j-plate_rule').show();
   });

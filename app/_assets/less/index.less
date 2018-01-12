@@ -4,10 +4,10 @@
     background: url('../images/index/banner.png')no-repeat center;
     background-size: 100%;
     width: 100%;
-    height: 103px;
+    height: 120px;
     .search-box{
       width: 295px;
-      height: 30px;
+      height: 35px;
       margin: 0 auto;
       border-radius: 50px;
       background-color: rgba(111,111,111,0.5);
@@ -28,9 +28,9 @@
         }
         .search-input{
           display: inline-block;
-          font-size: 12px;
-          height: 20px;
-          line-height: 20px;
+          font-size: 14px;
+          height: 35px;
+          line-height: 35px;
           color: #bbbbbb;
           background-color: transparent;
           border: none;
@@ -50,7 +50,7 @@
         margin: auto 0;
         flex: 1;
         color: #333333;
-        font-size: 10px;
+        font-size: 12px;
         height: 18px;
         border-right: 1px solid #efefef;
         &.active{
@@ -67,13 +67,16 @@
       .new-content-title{
         display: flex;
         .title-left{
-          font-size: 15px;
+          font-size: 18px;
           flex: 1;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         .title-right{
           flex: 1;
           position: relative;
-          font-size: 10px;
+          font-size: 12px;
           text-align: right;
           float: right;
           .title-text{
@@ -85,36 +88,36 @@
       }
       .new-content-panel{
         display: flex;
-        padding: 15px 0;
+        padding: 24px 0;
         text-align: center;
         .panel-title{
           color: #111;
-          font-size: 10px;
+          font-size: 12px;
         }
         .panel-left {
           flex: 1;
           border-right: 1px solid #efefef;
           .panel-num {
-            font-size: 30px;
+            font-size: 35px;
             color: #f42241;
             span {
-              font-size: 13px;
+              font-size: 15px;
             }
           }
         }
         .panel-right{
           flex: 1;
           .panel-money{
-            font-size: 30px;
+            font-size: 35px;
             span{
-              font-size: 13px;
+              font-size: 15px;
             }
           }
         }
       }
       .new-content-info{
         display: flex;
-        padding-bottom: 14px;
+        padding-bottom: 15px;
         border-bottom: 1px solid #efefef;
         .info-box{
           flex: 1;
@@ -129,11 +132,11 @@
             display: inline-block;
             .info-title{
               color: #111;
-              font-size: 11px;
+              font-size: 12px;
             }
             .info-content{
               color: #bbb;
-              font-size: 9px;
+              font-size: 10px;
               span{
                 padding-right: 5px;
               }
@@ -143,29 +146,31 @@
         .info-bag{
           text-align: center;
           margin-top: 5px;
-          font-size: 10px;
+          font-size: 12px;
           color: #e10000;
-          height: 20px;
-          line-height: 20px;
-          width: 75px;
+          height: 24px;
+          line-height: 24px;
+          padding: 0 5px;
+          min-width: 75px;
           border: 1px solid #e10000;
           border-radius: 2px;
         }
       }
     }
     .new-ps{
-      height: 28px;
-      line-height: 28px;
-      font-size: 10px;
+      height: 33px;
+      line-height: 33px;
+      font-size: 12px;
       color: #ffb147;
       text-align: center;
+      background: #fff7ea;
       .ps-icon{
         display: inline-block;
-        width: 10px;
-        height: 10px;
+        width: 11px;
+        height: 12px;
         margin-right: 5px;
         background: url('../images/index/light.png')no-repeat center;
-        background-size: 10px 10px;
+        background-size: 11px 12px;
       }
     }
     .niu-note-content{
@@ -176,11 +181,12 @@
         height: 63px;
         .note-num{
           display: inline-block;
-          width: 32px;
+          width: 39px;
           text-align: center;
           line-height: 63px;
-          font-size: 20px;
+          font-size: 24px;
           color: #bbb;
+          font-style:italic;
         }
         .note-info{
           flex: 1;
@@ -201,12 +207,12 @@
             line-height: 1;
             .note-title{
               color: #111;
-              font-size: 15px;
-              padding-bottom: 4px;
+              font-size: 18px;
+              padding-bottom: 6px;
             }
             .note-content{
               color: #bbb;
-              font-size: 10px;
+              font-size: 12px;
               span{
                 color: #e10000;
               }
@@ -215,8 +221,8 @@
         }
         .note-reward{
           position: absolute;
-          width: 30px;
-          height: 35px;
+          width: 34px;
+          height:41px;
           right: 8px;
           bottom: 50%;
           margin-bottom: -17px;
